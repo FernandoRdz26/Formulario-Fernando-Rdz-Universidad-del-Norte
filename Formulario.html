@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para alumnos</title>
+
+    <style>
+        body{ 
+            background: radial-gradient(rgb(48, 47, 47),rgb(0, 0, 0));
+            background-attachment: fixed;}
+        #cuestionario{width: 610px; height: auto; background-color: rgba(255, 255, 255, 0.15); border-radius: 20px; margin: auto; margin-top: 60px; 
+            border: 1px solid rgba(255, 255, 255, 0.30);}
+        label{color: white; padding-left: 15px;}
+        input{background: rgba(255, 255, 255, 0.50); border-radius: 5px; transform: transition 0.3s ease;}
+        input:hover{transform: scale(1.1);}
+        #pregunta-respuesta{display: flex; align-items: center; margin-top: 10px;}
+        #pregunta-respuesta label{width: 150px;}
+        #pregunta-respuesta input{margin-left: 100px; width: 320px;}
+        #pregunta-respuesta select{margin-left: 102px; width: 327px; background: rgba(255, 255, 255, 0.50); border-radius: 5px; transform: transition 0.3s ease;}
+        select:hover{transform: scale(1.1);}
+        #pregunta-respuesta textarea{margin-left: 102px; width: 320px; background: rgba(255, 255, 255, 0.50); border-radius: 5px;}
+        #Entregar{transform: transition 0.3s ease;}
+        #Entregar:hover{transform: scale(1.1);}
+    </style>
+
+
+</head>
+<body>
+
+    <div id="cuestionario">
+        <form action="Finalizado.html">
+            <div id="pregunta-respuesta">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre/s">
+            </div>
+            <div id="pregunta-respuesta">
+                <label for="apellido-paterno">Apellido Paterno:</label>
+                <input type="text" name="apellido-paterno" id="apellido-paterno" placeholder="Apellido paterno">
+            </div>
+            <div id="pregunta-respuesta">
+                <label for="apellido-materno">Apellido Materno:</label>
+                <input type="text" name="apellido-materno" id="apellido-materno" placeholder="Apellido materno">
+            </div>
+            <div id="pregunta-respuesta">
+                <label for="matricula">Matricula</label>
+                <input type="number" name="matricula" id="matricula" placeholder="Matricula">
+            </div>
+            <div id="pregunta-respuesta">
+                <label for="modalidad">Modalidad</label>
+                <select name="modalidad" id="modalidad">
+                <option value="">Selecciona una opcion</option>
+                <option value="tradicional">Sistema Tradicional</option>
+                <option value="sabatino">Sistema Sabatino</option>
+                </select>
+            </div>
+            <div id="pregunta-respuesta">
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="10 digitos">
+            </div>
+            <div id="pregunta-respuesta">
+                <label for="edad">Edad</label>
+                <select name="edad" id="edad">
+                    <option value="">Selecciona una opcion</option>
+                    <option value="menor de edad">Menor de 18 años</option>
+                    <option value="mayor de edad">Mayor de 18 años</option>
+                </select>
+            </div>
+            <div id="pregunta-respuesta">
+                <label for="correo">Correo electronico</label>
+                <input type="email" name="correo" id="correo" placeholder="colocar con @">
+            </div>
+            <div id="pregunta-respuesta">
+                <label for="turno">Turno</label>
+                <select name="turno" id="turno">
+                    <option value="">Selecciona una opcion</option>
+                    <option value="matutino">Matutino</option>
+                    <option value="vespertino">Vespertino</option>
+                </select>
+            </div>
+            <div id="pregunta-respuesta">
+                <label for="tetra">Tetra</label>
+                <input type="number" name="tetra" id="tetra" min="1" max="10" placeholder="1-10">
+            </div>
+            <div id="pregunta-respuesta">
+                <label for="curp">CURP</label>
+                <input type="text" name="curp" id="curp" placeholder="Clave Unica de Registro de Poblacion">
+            </div>
+            <div id="pregunta-respuesta">
+                <label for="enfermedad">Enfermedad/es</label>
+                <input type="text" name="enfermedad" id="enfermedad" placeholder="En caso de no tener escribir 'ninguna'">
+            </div>
+                        <div id="pregunta-respuesta">
+                <label for="sugerencias">Comentarios o sugerencias</label>
+                <textarea name="sugerencias" id="sugerencias" placeholder="Escriba aqui sus comentarios y sugerencias"></textarea>
+            </div>
+            <input type="submit" value="Entregar" style="margin-left: 270px; margin-top: 10px; margin-bottom: 5px;" id="Entregar">
+        </form>
+    </div>
+
+</body>
+</html>
